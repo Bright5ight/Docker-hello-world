@@ -1,0 +1,26 @@
+PS C:\Users\Nitro\Desktop\ЛФ ПНИПУ\4 курс\Сети и телекоммуникации\Домашнее задание по Docker\hello-world> docker build . --tag hello-world
+[+] Building 1.8s (7/7) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                                                                                        0.0s 
+ => => transferring dockerfile: 31B                                                                                                                                                                                         0.0s 
+ => [internal] load .dockerignore                                                                                                                                                                                           0.0s 
+ => => transferring context: 2B                                                                                                                                                                                             0.0s 
+ => [internal] load metadata for docker.io/library/python:latest                                                                                                                                                            1.7s 
+ => [internal] load build context                                                                                                                                                                                           0.0s 
+ => => transferring context: 64B                                                                                                                                                                                            0.0s 
+ => [1/2] FROM docker.io/library/python@sha256:fc809ada71c087cec7e2d2244bcb9fba137638978a669f2aaf6267db43e89fdf                                                                                                             0.0s 
+ => CACHED [2/2] COPY . .                                                                                                                                                                                                   0.0s 
+ => exporting to image                                                                                                                                                                                                      0.0s 
+ => => exporting layers                                                                                                                                                                                                     0.0s 
+ => => writing image sha256:dcac257afc606d6d9b2dbd03040d4b1b54aa948b69cc80f38430f99acbc8f686                                                                                                                                0.0s 
+ => => naming to docker.io/library/hello-world                                                                                                                                                                              0.0s 
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+PS C:\Users\Nitro\Desktop\ЛФ ПНИПУ\4 курс\Сети и телекоммуникации\Домашнее задание по Docker\hello-world> docker run hello-world
+hello 19-ЛФ-301 world
+PS C:\Users\Nitro\Desktop\ЛФ ПНИПУ\4 курс\Сети и телекоммуникации\Домашнее задание по Docker\hello-world> docker images
+REPOSITORY    TAG       IMAGE ID       CREATED          SIZE 
+hello-world   latest    dcac257afc60   24 minutes ago   932MB
+PS C:\Users\Nitro\Desktop\ЛФ ПНИПУ\4 курс\Сети и телекоммуникации\Домашнее задание по Docker\hello-world> docker ps -a
+CONTAINER ID   IMAGE         COMMAND                  CREATED          STATUS                      PORTS     NAMES
+10d2a6c8aef7   hello-world   "python hello-world.…"   30 seconds ago   Exited (0) 29 seconds ago             admiring_hopper
+PS C:\Users\Nitro\Desktop\ЛФ ПНИПУ\4 курс\Сети и телекоммуникации\Домашнее задание по Docker\hello-world> 

@@ -1,0 +1,1 @@
+print("hello 19-ЛФ-301 world")
